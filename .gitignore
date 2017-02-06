@@ -1,0 +1,6 @@
+.DS_Store
+.tmp
+.git
+node_modules
+dist/bundle.js
+dist/bundle.js.map

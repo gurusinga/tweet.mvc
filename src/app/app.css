@@ -1,0 +1,50 @@
+body {
+  background: #f3f3f3;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  
+}
+
+textarea,
+input[type] {
+  font-size: 1.3em;
+  padding: 1.6em;
+  background-color: #ffffff;
+}
+ 
+.header {
+  color: #9b4dca;
+}
+ 
+.text-logo {
+  margin-left: 2em;
+}
+
+.list-group--tweet {
+  margin-top: 0.3125em;
+  padding: 1em;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+
+.list-group--tweet .title {
+  font-weight: normal;
+}
+
+.list-group--tweet .button.button-clear.close {
+  background-color: #f3f2f2;
+}
+
+.list-group--tweet:hover {
+  border: 1px solid #9b4dca;
+}
+
+.input-group {
+  margin-top: 1em;
+}
+
+.input-group--column {
+  padding-top: 0.625em!important;
+}
+

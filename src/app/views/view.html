@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="column header">
+      <span class="text-logo">TweetMVC</span>
+    </div>
+  </div>
+  <div class="row input-group">
+    <div class="column input-group--column">
+      <!-- Post data with data from the ng-model -->
+      <form ng-submit="viewer.onPost(viewer.inputModel)">
+        <!-- data bind inputModel -->
+        <input type="text" placeholder="Tell your stories..." id="nameField" ng-model="viewer.inputModel">
+        <button type="submit" class="button float-right">
+          Post
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <!-- list array of data by using angular built-in helper ng-repeat and reverse the index -->
+      <div class="list-group--tweet" ng-repeat="item in viewer.models | orderBy:'$index':true">
+        <div>
+          <!-- Delete item functionality -->
+          <button class="button button-clear close float-right" ng-click="viewer.onDelete(item)">X</button>
+        </div>
+        <!-- show title data -->
+        <div class="title">
+          {{ item.title }}
+        </div>
+        <div>
+          <!-- show post date data -->
+          <small>{{ item.postDate | date:"medium" }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
