@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "a twitter-clone sample application in MVC",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "start": "./node_modules/.bin/gulp"
   },
   "author": "Gurusinga",
   "license": "Apache-2.0",
